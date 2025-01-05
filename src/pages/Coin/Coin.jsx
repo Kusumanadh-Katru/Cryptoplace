@@ -53,7 +53,7 @@ const Coin = () => {
   }, [coinId,currency]);
 
   // Render loading state if coinData is undefined or null
-  if (!coinData,!historicalData) {
+  if (!coinData || !historicalData) {
     return(
     <div className='spinner'>
       <div className='spin'></div>
@@ -115,3 +115,4 @@ const Coin = () => {
   }
 
 export default Coin
+
