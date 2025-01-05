@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   
     const { setCurrency } = useContext(CoinContext);
+    
 
     const currencyHandler = (event) =>{
         switch (event.target.value) {
